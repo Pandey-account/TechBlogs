@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>AddPostServlet</servlet-name>
+        <servlet-class>com.tech.blog.servlet.AddPostServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditServlet</servlet-name>
+        <servlet-class>com.tech.blog.servlet.EditServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LikeServlet</servlet-name>
+        <servlet-class>com.tech.blog.servlet.LikeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterServalet</servlet-name>
+        <servlet-class>com.tech.blog.servlet.RegisterServalet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>logoutServlet</servlet-name>
+        <servlet-class>com.tech.blog.servlet.logoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>loginServalet</servlet-name>
+        <servlet-class>com.tech.blog.servlet.loginServalet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddPostServlet</servlet-name>
+        <url-pattern>/AddPostServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditServlet</servlet-name>
+        <url-pattern>/EditServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LikeServlet</servlet-name>
+        <url-pattern>/LikeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterServalet</servlet-name>
+        <url-pattern>/RegisterServalet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>logoutServlet</servlet-name>
+        <url-pattern>/logoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginServalet</servlet-name>
+        <url-pattern>/loginServalet</url-pattern>
+    </servlet-mapping>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error_page.jsp</location>
+    </error-page>
+    
+</web-app>
